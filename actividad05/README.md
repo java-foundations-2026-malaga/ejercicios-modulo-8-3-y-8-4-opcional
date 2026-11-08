@@ -4,6 +4,10 @@
 
 Captura IOException y muestra información útil del error.
 
+### Detalles
+
+- Captura `IOException` en lugar de `Exception` y muestra `"IOException: "` seguido del mensaje de la excepción (`getMessage()`).
+
 ## Objetivo
 
 - Leer el código base y corregirlo o completarlo.
@@ -28,4 +32,5 @@ IOException: archivo no disponible
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

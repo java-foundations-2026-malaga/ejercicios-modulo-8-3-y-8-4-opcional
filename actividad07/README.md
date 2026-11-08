@@ -4,6 +4,11 @@
 
 Implementa divide y controla desde main un divisor igual a cero.
 
+### Detalles
+
+- Implementa en `Calculator` un método `int divide(int dividend, int divisor)` que lance `ArithmeticException("el divisor no puede ser cero")` si el divisor es 0.
+- En `main` muestra `12 / 3 = 4` con `divide(12, 3)` y llama después a `divide(5, 0)` dentro de un `try/catch`, mostrando `"Error: " + e.getMessage()`.
+
 ## Objetivo
 
 - Leer el código base y corregirlo o completarlo.
@@ -29,4 +34,5 @@ Error: el divisor no puede ser cero
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

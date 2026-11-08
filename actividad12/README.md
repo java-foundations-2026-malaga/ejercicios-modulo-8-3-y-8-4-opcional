@@ -4,6 +4,11 @@
 
 Corrige la distancia entre dos puntos y calcula el tiempo según la velocidad.
 
+### Detalles
+
+- La firma correcta es `getDistance(double x1, double y1, double x2, double y2)` y la fórmula `Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1))`.
+- Calcula la distancia entre (0, 0) y (3, 4) y el tiempo con un método `getTime(double distance, double speed)` = distancia / velocidad, con velocidad 10.
+
 ## Objetivo
 
 - Leer el código base y corregirlo o completarlo.
@@ -29,4 +34,5 @@ Tiempo: 0.5
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

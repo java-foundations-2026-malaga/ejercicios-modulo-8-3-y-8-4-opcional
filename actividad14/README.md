@@ -4,6 +4,10 @@
 
 Valida el intervalo inclusivo 50..100 con valores cercanos a ambos límites.
 
+### Detalles
+
+- Corrige `isValid` para que acepte el intervalo **inclusivo** 50..100 y muestra el resultado para 49, 50, 51, 99, 100 y 101 con el formato `valor: resultado`.
+
 ## Objetivo
 
 - Leer el código base y corregirlo o completarlo.
@@ -33,4 +37,5 @@ Valida el intervalo inclusivo 50..100 con valores cercanos a ambos límites.
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

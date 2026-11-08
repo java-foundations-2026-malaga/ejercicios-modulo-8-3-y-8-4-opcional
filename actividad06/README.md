@@ -4,6 +4,12 @@
 
 Clasifica y corrige ejemplos de error de compilación, lógica y ejecución.
 
+### Detalles
+
+- Error de compilación: imagina que la declaración era `int x == 1;`; ya corregida, muestra `"Compilación: declaración corregida, x = " + x`.
+- Error de lógica: la comparación `2 == 3` no comprueba lo que queremos; corrígela para comparar `x == 1` y muestra `"Lógica: comparación corregida, iguales = " + iguales`.
+- Error de ejecución: `10 / 0` lanza `ArithmeticException`; guarda el divisor en una variable y, si es cero, muestra `Ejecución: divisor validado` en lugar de dividir.
+
 ## Objetivo
 
 - Leer el código base y corregirlo o completarlo.
@@ -30,4 +36,5 @@ Ejecución: divisor validado
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

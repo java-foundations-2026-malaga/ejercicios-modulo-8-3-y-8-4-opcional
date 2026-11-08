@@ -4,6 +4,10 @@
 
 Implementa sumArray sin acceder fuera de rango y prueba varios tamaños.
 
+### Detalles
+
+- Corrige `sumArray` y muestra `"Vacío: " + sumArray(new int[0])`, `"Tres: " + sumArray(new int[] {1, 2, 3})` y `"Cinco: " + sumArray(new int[] {1, 2, 3, 4, 5})`.
+
 ## Objetivo
 
 - Leer el código base y corregirlo o completarlo.
@@ -30,4 +34,5 @@ Cinco: 15
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

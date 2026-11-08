@@ -4,6 +4,10 @@
 
 Comprueba valores distintos y duplicados.
 
+### Detalles
+
+- Corrige `maximum` para que funcione también con valores repetidos y muestra los tres casos con el formato `max(a, b, c) = resultado`.
+
 ## Objetivo
 
 - Leer el código base y corregirlo o completarlo.
@@ -30,4 +34,5 @@ max(7, 2, 7) = 7
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.
